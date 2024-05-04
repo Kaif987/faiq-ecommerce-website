@@ -24,7 +24,10 @@ export default function Payment() {
                 })
             })
 
+            console.log(response)
+
             const data = await response.json()
+            console.log(data)
             navigate("/success")
             console.log(data)
         }
